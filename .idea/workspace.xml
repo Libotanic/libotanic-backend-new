@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6c464ef-0387-4aa6-b8ed-b75eae4d0558" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/tinkoff/academy/libotanic/garden/integration/GardenControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/tinkoff/academy/libotanic/garden/unit/GardenServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/db/migration/V4__test_data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres-data/base/5/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/postgres-data/base/5/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgres-data/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/postgres-data/global/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/tinkoff/academy/libotanic/integration/BlackBoxBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/tinkoff/academy/libotanic/integration/BlackBoxBookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/tinkoff/academy/libotanic/spring_integration/SpringBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/tinkoff/academy/libotanic/spring_integration/SpringBookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/tinkoff/academy/libotanic/unit/BookServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/db/migration/V999__test_data.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +90,7 @@
       <recent name="ru.tinkoff.academy.tinkofflibrary" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GardenControllerTest.testGettingBook">
+  <component name="RunManager" selected="Spring Boot.LibotanicBackendApplication">
     <configuration name="BookControllerTest" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="env">
@@ -230,7 +220,9 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -287,6 +279,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added unit" />
+    <MESSAGE value="adeed files" />
+    <option name="LAST_COMMIT_MESSAGE" value="adeed files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
