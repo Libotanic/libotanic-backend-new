@@ -23,6 +23,7 @@ jar {
 				'Main-Class': 'ru.tinkoff.academy.libotanic.LibotanicBackendApplication'
 		)
 	}
+	enabled = false
 }
 
 repositories {
