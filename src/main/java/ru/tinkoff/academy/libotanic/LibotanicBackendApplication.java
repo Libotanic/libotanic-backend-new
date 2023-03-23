@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Profile;
 
 @SpringBootApplication
 public class LibotanicBackendApplication {
-  @Profile(value = "prod")
   public static void main(String[] args) {
     SpringApplication.run(LibotanicBackendApplication.class, args);
   }
