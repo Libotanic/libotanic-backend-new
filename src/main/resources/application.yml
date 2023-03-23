@@ -19,5 +19,3 @@ spring:
   jpa:
     show-sql: true
 
-  main:
-    web-application-type: none
