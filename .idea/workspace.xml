@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6c464ef-0387-4aa6-b8ed-b75eae4d0558" name="Changes" comment="application config" />
+    <list default="true" id="d6c464ef-0387-4aa6-b8ed-b75eae4d0558" name="Changes" comment="delete Dockerfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -287,7 +290,7 @@
       <workItem from="1671994424464" duration="12140000" />
       <workItem from="1672039163052" duration="1592000" />
       <workItem from="1672042674350" duration="3628000" />
-      <workItem from="1679596924102" duration="2883000" />
+      <workItem from="1679596924102" duration="3647000" />
     </task>
     <task id="LOCAL-00001" summary="application config">
       <created>1679599650764</created>
@@ -296,7 +299,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679599650764</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="delete Dockerfile">
+      <created>1679600186677</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679600186677</updated>
+    </task>
+    <task id="LOCAL-00003" summary="delete Dockerfile">
+      <created>1679600434082</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679600434082</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +334,8 @@
     <MESSAGE value="added unit" />
     <MESSAGE value="adeed files" />
     <MESSAGE value="application config" />
-    <option name="LAST_COMMIT_MESSAGE" value="application config" />
+    <MESSAGE value="delete Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete Dockerfile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
