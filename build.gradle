@@ -17,6 +17,14 @@ configurations {
 	}
 }
 
+jar {
+	manifest {
+		attributes(
+				'Main-Class': 'ru.tinkoff.academy.libotanic.LibotanicBackendApplication'
+		)
+	}
+}
+
 repositories {
 	mavenCentral()
 }
