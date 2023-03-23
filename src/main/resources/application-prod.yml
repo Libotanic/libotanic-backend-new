@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: "jdbc:${DATABASE_URL}"
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+
+  jpa:
+    show-sql: true
+
+  main:
+    web-application-type: none
