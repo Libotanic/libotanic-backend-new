@@ -2,9 +2,10 @@ import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 
 plugins {
 	id 'org.springframework.boot' version '2.7.4'
-	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 	id 'java'
 }
+
+apply plugin: 'io.spring.dependency-management'
 
 group = 'ru.tinkoff.academy'
 version = '0.0.1-SNAPSHOT'
@@ -47,11 +48,13 @@ dependencies {
 	testImplementation "org.testcontainers:postgresql:1.17.6"
 }
 
+/*
 dependencyManagement {
 	imports {
 		mavenBom "org.testcontainers:testcontainers-bom:${testcontainersVersion}"
 	}
 }
+*/
 
 tasks.named('test') {
 	useJUnitPlatform()
