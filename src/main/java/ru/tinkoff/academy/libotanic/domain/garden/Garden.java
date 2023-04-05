@@ -1,4 +1,4 @@
-package ru.tinkoff.academy.libotanic.domain;
+package ru.tinkoff.academy.libotanic.domain.garden;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -15,7 +15,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
-import ru.tinkoff.academy.libotanic.domain.garden_type.GardenType;
+import ru.tinkoff.academy.libotanic.domain.plant.Plant;
+import ru.tinkoff.academy.libotanic.domain.garden.garden_type.GardenType;
 
 @Entity
 @Table(name = "garden")
@@ -29,6 +30,9 @@ public class Garden {
 
     @Column(name = "name")
     String name;
+
+    @Column(name = "image_url")
+    String imageUrl;
 
     @ManyToOne
     @JoinColumn(name = "type_id")

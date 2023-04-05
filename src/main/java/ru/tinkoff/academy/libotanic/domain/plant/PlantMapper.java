@@ -1,4 +1,4 @@
-package ru.tinkoff.academy.libotanic.domain;
+package ru.tinkoff.academy.libotanic.domain.plant;
 
 import org.springframework.stereotype.Component;
 
@@ -24,6 +24,7 @@ public class PlantMapper {
             plant.getFamily().getPlantOrder().plantClass.plantDivision.nameLat
         ))
         .description(plant.getDescription())
+        .plantImages(plant.getImages().stream().map(it -> it.url).toList())
         .build();
   }
 }

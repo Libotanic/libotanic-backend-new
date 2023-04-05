@@ -1,4 +1,4 @@
-package ru.tinkoff.academy.libotanic.domain;
+package ru.tinkoff.academy.libotanic.domain.plant;
 
 import javax.persistence.Entity;
 import javax.persistence.Inheritance;

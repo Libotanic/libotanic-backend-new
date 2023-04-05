@@ -1,4 +1,4 @@
-package ru.tinkoff.academy.libotanic.domain.garden_type;
+package ru.tinkoff.academy.libotanic.domain.garden.garden_type;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;

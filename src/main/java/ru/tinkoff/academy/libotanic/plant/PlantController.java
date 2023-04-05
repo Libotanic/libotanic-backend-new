@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.tinkoff.academy.libotanic.abstract_management.AbstractController;
 import ru.tinkoff.academy.libotanic.abstract_management.AbstractService;
-import ru.tinkoff.academy.libotanic.domain.Plant;
+import ru.tinkoff.academy.libotanic.domain.plant.Plant;
 
 @RestController
 @RequestMapping("/plants")

@@ -15,11 +15,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.tinkoff.academy.libotanic.abstract_management.AbstractService;
-import ru.tinkoff.academy.libotanic.domain.Garden;
-import ru.tinkoff.academy.libotanic.domain.GardenDto;
-import ru.tinkoff.academy.libotanic.domain.GardenMapper;
-import ru.tinkoff.academy.libotanic.domain.PlantDto;
-import ru.tinkoff.academy.libotanic.domain.PlantMapper;
+import ru.tinkoff.academy.libotanic.domain.garden.Garden;
+import ru.tinkoff.academy.libotanic.domain.garden.GardenDto;
+import ru.tinkoff.academy.libotanic.domain.garden.GardenMapper;
+import ru.tinkoff.academy.libotanic.domain.plant.PlantDto;
+import ru.tinkoff.academy.libotanic.domain.plant.PlantMapper;
 
 @RestController
 @RequestMapping("/gardens")

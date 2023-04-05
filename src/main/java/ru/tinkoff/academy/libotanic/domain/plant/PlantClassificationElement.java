@@ -1,4 +1,4 @@
-package ru.tinkoff.academy.libotanic.domain;
+package ru.tinkoff.academy.libotanic.domain.plant;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
