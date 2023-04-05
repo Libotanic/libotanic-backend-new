@@ -1,4 +1,4 @@
-package ru.tinkoff.academy.libotanic.plant;
+package ru.tinkoff.academy.libotanic.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.Column;
@@ -12,9 +12,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import ru.tinkoff.academy.libotanic.classification.PlantClassificationElement;
-import ru.tinkoff.academy.libotanic.classification.PlantFamily;
-import ru.tinkoff.academy.libotanic.garden.Garden;
 
 @Entity
 @Table(name = "plant")

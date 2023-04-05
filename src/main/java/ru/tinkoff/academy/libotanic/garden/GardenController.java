@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,15 +14,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.tinkoff.academy.libotanic.abstract_management.AbstractController;
 import ru.tinkoff.academy.libotanic.abstract_management.AbstractService;
-import ru.tinkoff.academy.libotanic.plant.Plant;
+import ru.tinkoff.academy.libotanic.domain.Garden;
+import ru.tinkoff.academy.libotanic.domain.GardenDto;
+import ru.tinkoff.academy.libotanic.domain.GardenMapper;
+import ru.tinkoff.academy.libotanic.domain.PlantDto;
+import ru.tinkoff.academy.libotanic.domain.PlantMapper;
 
 @RestController
 @RequestMapping("/gardens")
 @RequiredArgsConstructor
 public class GardenController {
+
   protected final GardenMapper mapper;
+  protected final PlantMapper plantMapper;
 
   protected final AbstractService<Garden> service;
 
@@ -46,9 +52,11 @@ public class GardenController {
 
   @GetMapping("/{id}/plants")
   @JsonIgnoreProperties(value = "plants")
-  public ResponseEntity<Set<Plant>> findPlantsById(@PathVariable Long id) {
+  public ResponseEntity<Set<PlantDto>> findPlantsById(@PathVariable Long id) {
     Optional<Garden> optionalEntity = service.findById(id);
-    return optionalEntity.map(value -> new ResponseEntity<>(value.plants, HttpStatus.OK))
+    return optionalEntity.map(
+            value -> new ResponseEntity<>(value.getPlants().stream().map(plantMapper::toDto).collect(
+                Collectors.toSet()), HttpStatus.OK))
         .orElseGet(() -> new ResponseEntity<>(HttpStatus.NO_CONTENT));
   }
 
@@ -59,4 +67,3 @@ public class GardenController {
   }
 
 }
-
