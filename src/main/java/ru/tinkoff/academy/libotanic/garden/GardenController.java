@@ -38,12 +38,11 @@ public class GardenController {
 
   @GetMapping
   @JsonIgnoreProperties(value = "plants")
-  public List<Garden> findAll() {
-    return service.findAll();
+  public List<GardenDto> findAll() {
+    return service.findAll().stream().map(mapper::toDto).toList();
   }
 
   @GetMapping("/{id}")
-  @JsonIgnoreProperties(value = "plants")
   public ResponseEntity<GardenDto> findById(@PathVariable Long id) {
     Optional<Garden> optionalEntity = service.findById(id);
     return optionalEntity.map(value -> new ResponseEntity<>(mapper.toDto(value), HttpStatus.OK))
@@ -51,7 +50,6 @@ public class GardenController {
   }
 
   @GetMapping("/{id}/plants")
-  @JsonIgnoreProperties(value = "plants")
   public ResponseEntity<Set<PlantDto>> findPlantsById(@PathVariable Long id) {
     Optional<Garden> optionalEntity = service.findById(id);
     return optionalEntity.map(
