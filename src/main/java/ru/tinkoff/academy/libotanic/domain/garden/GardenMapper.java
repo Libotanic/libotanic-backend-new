@@ -1,4 +1,4 @@
-package ru.tinkoff.academy.libotanic.domain;
+package ru.tinkoff.academy.libotanic.domain.garden;
 
 
 import org.springframework.stereotype.Component;
@@ -9,7 +9,8 @@ public class GardenMapper {
     return new GardenDto(
         garden.getId(),
         garden.name,
-        garden.gardenType.name
+        garden.gardenType.name,
+        garden.imageUrl
     );
   }
 }

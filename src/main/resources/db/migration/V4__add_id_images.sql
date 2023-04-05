@@ -1,0 +1,1 @@
+ALTER TABLE plant_image ADD COLUMN id bigserial primary key;

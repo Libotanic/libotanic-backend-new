@@ -1,7 +1,8 @@
-package ru.tinkoff.academy.libotanic.domain;
+package ru.tinkoff.academy.libotanic.domain.plant;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
+import java.util.List;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 
@@ -17,4 +18,6 @@ public class PlantDto {
   final PlantClassificationElementDto plantClass;
   final PlantClassificationElementDto plantDivision;
   final String description;
+
+  final List<String> plantImages;
 }
