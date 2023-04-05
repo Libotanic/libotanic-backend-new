@@ -1,0 +1,1 @@
+ALTER TABLE garden ADD COLUMN image_url text;

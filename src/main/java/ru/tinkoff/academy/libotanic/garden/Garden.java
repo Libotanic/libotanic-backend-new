@@ -19,18 +19,17 @@ public class Garden {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long id;
+    Long id;
 
     @Column(name = "name")
-    private String name;
+    String name;
 
     @ManyToOne
     @JoinColumn(name = "type_id")
     @JsonIgnoreProperties(value = "id")
-    private GardenType gardenType;
+    GardenType gardenType;
 
     @OneToMany(mappedBy = "garden", cascade = CascadeType.ALL)
-    @JsonIgnore
-    //@JsonIgnoreProperties(value = "garden")
-    private Set<Plant> plants;
+    @JsonIgnoreProperties(value = "garden")
+    Set<Plant> plants;
 }
