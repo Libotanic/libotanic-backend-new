@@ -1,4 +1,4 @@
-package ru.tinkoff.academy.libotanic.classification;
+package ru.tinkoff.academy.libotanic.domain;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
@@ -22,8 +22,8 @@ public class PlantClassificationElement {
   private Long id;
 
   @Column(name = "name_rus")
-  private String nameRus;
+  String nameRus;
 
   @Column(name = "name_lat")
-  private String nameLat;
+  String nameLat;
 }
